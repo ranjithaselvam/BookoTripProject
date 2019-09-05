@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="Test(failed)">
+    <classes>
+      <class name="com.atmecs.bookotrip.testscript.RoundTripTicketBooking">
+        <methods>
+          <include name="searchingFlightAvailabilityRoundTrip" invocation-numbers="0 1"/>
+          <include name="setup"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.atmecs.bookotrip.testscript.RoundTripTicketBooking -->
+      <class name="com.atmecs.bookotrip.testscript.OneWayTicketBooking">
+        <methods>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="searchingFlightAvailabilityOneWay" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.atmecs.bookotrip.testscript.OneWayTicketBooking -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
